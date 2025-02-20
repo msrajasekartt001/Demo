@@ -15,7 +15,7 @@
     --bg-pink: #fff4fa;
 }
 
-.special-text-3{
+.special-text{
     color: var(--primary);
 }
 /* Service-banner-3 start */
@@ -107,38 +107,81 @@
 
 /* Service banner - 2 end */
 
-/* About design - 2 sec */
+/* Vertical Six Card Design start */
 
-.abt-2-w{
-    padding: 10px 15px;
-    background-color: rgba(3, 211, 3, 0.418);
-    border-radius: 20px;
-    cursor: pointer;
-    transition: 0.2s ease-in-out;
-}
-.abt-2-t{
-    padding: 10px 15px;
-    background-color: lightblue;
-    border-radius: 20px;
-    cursor: pointer;
-    transition: 0.2s ease-in-out;
-}
-.abt-2-s{
-    padding: 10px 15px;
-    background-color: rgba(7, 161, 212, 0.493);
-    border-radius: 20px;
-    cursor: pointer;
-    transition: 0.2s ease-in-out;
+.V-background{
+    background-color: rgba(129, 128, 128, 0.103);
 }
 
-.abt-2-w:hover{
-    transform: scale(1.1);
-}
-.abt-2-t:hover{
-    transform: scale(1.1);
-}
-.abt-2-s:hover{
-    transform: scale(1.1);
+.v-head{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #00357988;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 20px;
 }
 
-/* About Design -2 sec end */
+.v-head p{
+    margin-bottom: 0;
+    height: 30px;
+    width: 30px;
+    background-color: white;
+    border-radius: 50px;
+}
+
+/* Vertical Six card Design End */
+
+/* Four Card Design Start */
+
+.fiveCard{
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.card-hover{
+    text-align: center;
+    padding: 30px 15px; 
+    cursor: pointer;
+    line-height: 25px;
+    transition: 0.3s;
+    border-radius: 10px;
+    border: 2px solid transparent;
+}
+
+.card-hover.one{
+    background-color: #D0E8C5;
+}
+.card-hover.two{
+    background-color: #BCCCDC;
+}
+.card-hover.three{
+    background-color: #D9EAFD;
+}
+.card-hover.four{
+    background-color: #E5D9F2;
+}
+.card-hover:hover{
+    border: 2px solid black;
+    overflow: hidden;
+}
+
+/* Four Card Design End */
+
+/* Eight Content Design Start */
+
+.ec-background{
+    background-color: rgba(129, 128, 128, 0.103);
+}
+.eit-inside{
+    border: 2px solid transparent;
+    background-color: rgba(33, 79, 131, 0.13);
+    padding: 15px;
+    border-radius: 20px;
+}
+.eit-inside h4{
+    color: var(--accent-color);
+}
+
+/* Eight Content Design End */
