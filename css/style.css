@@ -18,7 +18,7 @@
 .special-text{
     color: var(--primary);
 }
-/* Service-banner-3 start */
+/* Service-banner start */
 
 .service-banner-3{
     padding: 0px;
@@ -105,7 +105,7 @@
     }
 }
 
-/* Service banner - 2 end */
+/* Service banner end */
 
 /* Vertical Six Card Design start */
 
@@ -185,3 +185,158 @@
 }
 
 /* Eight Content Design End */
+
+/* Five content design start */
+.fonts{
+    font-weight: 500;
+    color: var(--background-color);
+}
+
+
+.five-left{
+    border-radius: 10px 0px 0px 10px;
+    padding: 40px 6px;
+    background-color: #1163fb;
+}
+.five-height{
+    display: flex;
+    flex-direction: column;
+    max-height: 600px;
+    /* overflow-y: scroll; */
+    padding: 0px 20px;
+}
+.five-right{
+    padding: 63px 20px;
+    border-radius: 0px 10px 10px 0px;
+    /* background-color: lightblue; */
+}
+
+.left-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: rgba( 255, 255, 255, 0.25 );
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+    border: none;
+    font-size: 16px;
+    margin: 5px;
+    border: 2px solid transparent;
+    transition: 0.2s ease-in-out;
+}
+.left-btn:hover{
+    background-color: white;
+    transform: scale(1.1);
+    color: black;
+}
+
+.left-btn:hover + .left-btn{
+    transform: scale(1.05);
+}
+
+.left-btn:has(+ .left-btn:hover){
+    transform: scale(1.05);
+    /* color: white; */
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    max-height: 0px;
+    overflow: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+    background: #f7f7f7;
+    padding: 0px 15px;
+    border-radius: 5px;
+}
+
+.content.default {
+    border: 2px solid black;
+    max-height: 600px;
+    opacity: 1;
+}
+
+.content.show {
+    max-height: 600px;
+    opacity: 1;
+}
+
+@media (max-width:425px) {
+    .five-left{
+        border-radius: 10px 10px 0px 0px;
+        padding: 40px 6px;
+        background-color: #1163fb;
+    }
+    .five-right{
+        padding: 53px 25px;
+        border-radius: 0px 0px 10px 10px;
+    }
+}
+
+@media (min-width:426px) and  (max-width:768px){
+    .five-left{
+        border-radius: 10px 0px 0px 10px;
+        padding: 40px 6px;
+        background-color: #1163fb;
+    }
+    .five-right{
+        padding: 41px 25px;
+        border-radius: 0px 10px 10px 0px;
+    }
+    .content.default {
+        max-height: 485px;
+        opacity: 1;
+        border: 2px solid black;
+        overflow-y: scroll;
+    }
+    
+    .content.show {
+        /* max-height: 485px; */
+        opacity: 1;
+    }
+}
+
+@media (min-width:769px) and (max-width:1024px){
+    .five-right{
+        padding: 54px 25px;
+        border-radius: 0px 10px 10px 0px;
+    }
+    .content.default {
+        max-height: 460px;
+        opacity: 1;
+        border: 2px solid black;
+    }
+    
+    .content.show {
+        max-height: 500px;
+        opacity: 1;
+    }
+}
+/* Five content design end */
+
+/* launch card design start */
+.tx-background{
+    background-color: rgba(129, 128, 128, 0.103);
+}
+/* launch card design end */
+
+/* New Faq design start */
+.imgFaq{
+    padding: 20px;
+}
+.accordion-item{
+    border: none;
+    --bs-accordion-btn-focus-box-shadow: white;
+}
+.accordion-button:not(.collapsed){
+    background-color: transparent;
+    border: transparent;
+}
+
+.accordion-item:first-of-type>.accordion-header .accordion-button{
+    border: white;
+}
+/* New Faq Design End */
